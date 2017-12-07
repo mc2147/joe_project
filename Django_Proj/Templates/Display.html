@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  </head>
+
+  <style>
+  </style>
+
+
+  <body>
+    <div style="float:left; margin-left:20px;">
+    <b>Daily Logs</b>
+    <br>
+    {% for line in Display %}
+    {{line}}<br>
+    {% endfor %}
+    <br>
+    </div>
+    <div style="float:right; margin-right:30px;">
+    <b>Last 5 Days</b>
+    {% for line in Five_Day_Log %}
+    {{line}}<br>
+    {% endfor %}
+    </div>
+</body>
